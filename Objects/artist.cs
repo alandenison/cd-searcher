@@ -15,6 +15,7 @@ namespace CDOrganizer.Objects
       _instances.Add(this);
       Id = _instances.Count;
       _cds = new List<CD>{};
+
     }
 
     public List<CD> GetCDs()
@@ -33,5 +34,18 @@ namespace CDOrganizer.Objects
     {
       return _instances[searchId-1];
     }
+    // public static List<Artist> SearchArtist(string artistName)
+    // {
+    //   foreach(Artist artist in _instances)
+    //   {
+    //     if(artist.ArtistName == artistName)
+    //     {
+    //       return true;
+    //     }
+    //     else{
+    //       return false;
+    //     }
+    //   }
+    // }
   }
 }
